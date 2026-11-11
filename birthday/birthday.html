@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy 20th Birthday 💗</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&family=Dancing+Script:wght@500;700&family=Indie+Flower&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#fff4f8;--bg2:#ffe1ec;--bg3:#fbcfe0;--ink:#a14d73;--accent:#f4a3c4;--deep:#cc5c87;--paper:#fffafc;--glass:rgba(255,255,255,.6);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#3b0a24;--bg2:#5b1139;--bg3:#831843;--ink:#ffd1e6;--accent:#f472b6;--deep:#f9a8d4;--paper:#4a1030;--glass:rgba(0,0,0,.3)}}
+:root[data-theme="dark"]{--bg1:#3b0a24;--bg2:#5b1139;--bg3:#831843;--ink:#ffd1e6;--accent:#f472b6;--deep:#f9a8d4;--paper:#4a1030;--glass:rgba(0,0,0,.3)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:'Poppins',sans-serif;color:var(--ink);overflow:hidden;background:linear-gradient(160deg,var(--bg1),var(--bg2) 55%,var(--bg3));background-attachment:fixed}
+.page{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;opacity:0;pointer-events:none;transition:opacity 1s ease;z-index:2}
+.page.active{opacity:1;pointer-events:auto}
+h1{font-family:'Pacifico',cursive;font-size:2.1rem;color:var(--deep);line-height:1.3;text-shadow:0 2px 0 rgba(255,255,255,.6)}
+h2{font-family:'Dancing Script',cursive;font-size:2.2rem;color:var(--deep);margin-bottom:.8rem}
+p.sub{margin-top:.8rem;opacity:.85}
+.btn{margin-top:28px;background:linear-gradient(135deg,#f59abf,#e56a9d);color:#fff;border:0;border-radius:30px;padding:14px 32px;font:600 1.05rem 'Poppins',sans-serif;cursor:pointer;box-shadow:0 8px 22px rgba(229,106,157,.35);transition:transform .2s;animation:pulse 2s infinite}
+.btn:hover{transform:scale(1.07)}
+@keyframes pulse{50%{box-shadow:0 8px 34px rgba(229,106,157,.6)}}
+.big20{width:170px;height:170px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:700 5rem 'Pacifico',cursive;color:#fff;background:radial-gradient(circle at 30% 25%,#ffe3ef,#f7a8c8 60%,#e8799f);box-shadow:0 0 0 10px rgba(255,255,255,.45),0 0 60px rgba(244,163,196,.6);margin-bottom:24px;animation:float 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-12px)}}
+.fall{position:fixed;top:-30px;font-size:22px;animation:fall linear forwards;pointer-events:none;z-index:1}
+@keyframes fall{to{transform:translateY(115vh) rotate(360deg);opacity:.2}}
+body{background-size:300% 300%;animation:bgmove 14s ease infinite}@keyframes bgmove{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.page{transform:scale(.9);filter:blur(8px);transition:opacity .9s,transform .9s,filter .9s}.page.active{transform:none;filter:none}
+.wave span{display:inline-block;animation:wave 2.2s ease-in-out infinite}@keyframes wave{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-10px) rotate(-4deg)}}
+p.sub{animation:fadeup 1.2s .8s both}@keyframes fadeup{from{opacity:0;transform:translateY(14px)}}
+.big20{position:relative}.big20:before{content:'';position:absolute;inset:-18px;border-radius:50%;border:2px solid rgba(255,255,255,.7);animation:ring 2.4s ease-out infinite}@keyframes ring{from{transform:scale(.9);opacity:1}to{transform:scale(1.5);opacity:0}}
+.orbit{position:absolute;inset:0;animation:spin 9s linear infinite}.orbit b{position:absolute;left:50%;top:50%;font-size:1.3rem;font-weight:400;transform:rotate(calc(var(--i)*60deg)) translateY(-112px)}@keyframes spin{to{transform:rotate(360deg)}}
+.tw{position:fixed;color:#fff;z-index:0;pointer-events:none;animation:tw 2.4s ease-in-out infinite}@keyframes tw{0%,100%{opacity:.1;transform:scale(.6)}50%{opacity:.95;transform:scale(1.3) rotate(45deg)}}
+.balloon{position:fixed;bottom:-90px;width:44px;height:56px;border-radius:50% 50% 46% 46%;background:radial-gradient(circle at 30% 28%,rgba(255,255,255,.85),var(--c) 60%);z-index:1;pointer-events:none;animation:rise linear forwards;opacity:.9}.balloon:after{content:'';position:absolute;left:50%;top:100%;width:1px;height:40px;background:rgba(255,255,255,.8)}@keyframes rise{to{transform:translate(var(--dx),-125vh) rotate(8deg)}}
+#p4 h2{animation:beat 1.4s ease-in-out infinite}@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.08)}30%{transform:scale(1)}45%{transform:scale(1.06)}}
+.cake{font-size:3rem;animation:hop 1.2s ease-in-out infinite}@keyframes hop{50%{transform:translateY(-14px) rotate(8deg)}}
+.letter.typing:after{content:'▌';animation:blink 1s infinite}@keyframes blink{50%{opacity:0}}
+.heartbig{font-size:5rem;animation:beat 1.2s ease-in-out infinite}.row{display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:28px}.row .btn{margin-top:0}.btn.no{background:var(--glass);color:var(--deep);box-shadow:none;animation:none;border:2px solid var(--accent)}
+.env{width:260px;height:170px;background:#fbcfe8;border-radius:10px;position:relative;margin:0 auto 30px;box-shadow:0 16px 34px rgba(212,105,143,.35);animation:float 3s ease-in-out infinite}
+.env:before{content:'';position:absolute;inset:0;border-radius:10px;background:#f7b9d2;clip-path:polygon(0 0,50% 54%,100% 0,100% 100%,0 100%);z-index:2}
+.env:after{content:'';position:absolute;left:0;top:0;width:100%;height:100px;background:#f4a3c4;clip-path:polygon(0 0,100% 0,50% 100%);border-radius:10px 10px 0 0;transform-origin:top;transition:transform .8s;z-index:3}
+.env i{position:absolute;left:50%;top:80px;font-size:1.9rem;z-index:4;font-style:normal;animation:jig 1.6s infinite;transition:opacity .3s}
+@keyframes jig{0%,100%{transform:translateX(-50%) rotate(0)}25%{transform:translateX(-50%) rotate(-12deg)}75%{transform:translateX(-50%) rotate(12deg)}}
+.paper{position:absolute;left:16px;right:16px;top:10px;height:150px;background:#fff;border-radius:8px;z-index:1;padding:16px 10px;display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;color:#cc5c87;transition:transform 1s .5s;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+.paper small{font-size:.68rem;letter-spacing:.08em;opacity:.8}
+.paper b{font:700 1.5rem/1.15 'Dancing Script',cursive}
+.env.opened .paper{transform:translateY(-60px)}.env.opened:after{transform:rotateX(180deg);z-index:0}.env.opened i{opacity:0}.env.opened{animation:none}
+#p2 p{font-family:'Dancing Script',cursive;font-size:1.5rem}
+.letter{white-space:pre-line;font-family:'Dancing Script',cursive;font-weight:500;font-size:1.3rem;line-height:1.45;width:100%;max-width:560px;min-height:240px;flex-shrink:0;text-align:left;background:var(--glass);backdrop-filter:blur(6px);border:1.5px solid var(--accent);border-radius:20px;padding:22px 24px;box-shadow:0 10px 30px rgba(212,105,143,.2)}
+#p4{overflow-y:auto;justify-content:safe center}
+#p4 h2{margin:.3rem 0 .9rem}
+#p4 .btn{flex-shrink:0;margin-bottom:8px}
+@media(max-height:780px){.cake{font-size:2.2rem}#p4 h2{font-size:1.8rem;margin-bottom:.6rem}.letter{font-size:1.15rem;line-height:1.35;padding:16px 20px}}
+@media(max-width:600px){h1{font-size:1.7rem}h2{font-size:1.8rem}.letter{font-size:1.15rem}.card{height:380px}}
+html{-webkit-text-size-adjust:100%}body{-webkit-tap-highlight-color:transparent;touch-action:manipulation;overscroll-behavior:none}
+.btn{min-height:48px}
+@media(max-width:480px){.page{padding:16px}.big20{width:140px;height:140px;font-size:4rem;margin-bottom:18px}.orbit b{font-size:1.1rem;transform:rotate(calc(var(--i)*60deg)) translateY(-95px)}h1{font-size:1.55rem}.btn{padding:12px 26px;font-size:1rem}.env{width:min(260px,76vw)}.heartbig{font-size:4rem}.row{gap:14px}.letter{font-size:1.2rem;padding:16px 18px;border-radius:16px}#p4 h2{font-size:1.7rem}#p2 p{font-size:1.35rem}}
+.big20{background:#fff}.big20 .gif{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+.b20{position:absolute;right:-8px;bottom:0;z-index:2;background:linear-gradient(135deg,#f59abf,#e56a9d);color:#fff;font:400 1.6rem/1.2 'Pacifico',cursive;padding:2px 14px 6px;border-radius:20px;box-shadow:0 6px 14px rgba(229,106,157,.45)}
+.gifwrap{width:min(250px,66vw);aspect-ratio:1;border-radius:30px;background:#fff;overflow:hidden;margin:0 auto 24px;box-shadow:0 16px 34px rgba(212,105,143,.35);animation:float 3s ease-in-out infinite}
+.gifwrap img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.2)}
+.gifwrap.opened{animation:openpop .9s ease both}@keyframes openpop{0%{transform:scale(1)}30%{transform:scale(1.12) rotate(-4deg)}60%{transform:scale(1.12) rotate(4deg)}100%{transform:scale(.6) translateY(-40px);opacity:0}}
+#mute{display:none;position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);right:12px;z-index:50;width:44px;height:44px;border-radius:50%;border:0;background:var(--glass);backdrop-filter:blur(6px);font-size:1.2rem;cursor:pointer;box-shadow:0 4px 12px rgba(212,105,143,.25)}
+#p3{overflow-y:auto;justify-content:safe center}.stack{display:flex;flex-direction:column;align-items:center;max-width:100%}
+.cert{position:relative;width:min(340px,88vw);background:#fff;color:#a14d73;border-radius:18px;padding:24px 18px 56px;margin:16px 0 4px;box-shadow:0 16px 40px rgba(212,105,143,.35);border:3px double #f4a3c4;animation:certIn 1s cubic-bezier(.2,1.4,.4,1) both}
+.cert:before{content:'';position:absolute;inset:6px;border:1.5px dashed #f9c3d8;border-radius:12px;pointer-events:none}
+.cert-top{font:600 .8rem 'Poppins',sans-serif;letter-spacing:.12em;color:#cc5c87}
+.cert-names{font:700 1.9rem/1.2 'Dancing Script',cursive;margin:10px 0 6px;color:#cc5c87}.cert-names i{font-style:normal;color:#f4a3c4;margin:0 6px}
+.cert-line{font-size:.85rem;margin-top:6px}.cert-date{font:700 1.5rem 'Dancing Script',cursive;margin:2px 0 8px}
+.stamp{position:absolute;right:16px;bottom:12px;border:3px solid #e56a9d;color:#e56a9d;font:700 1.1rem 'Poppins',sans-serif;padding:2px 10px;border-radius:8px;transform:rotate(-14deg);opacity:0;animation:stamp .5s 1.2s cubic-bezier(.3,1.8,.5,1) both}
+@keyframes certIn{from{opacity:0;transform:translateY(40px) scale(.8) rotate(-4deg)}}
+@keyframes stamp{from{opacity:0;transform:rotate(-14deg) scale(3)}to{opacity:1;transform:rotate(-14deg) scale(1)}}
+.hint2{margin-top:12px;font-size:.85rem;opacity:.85;line-height:1.5}
+#done .btn{margin-top:18px}
+</style>
+</head>
+<body>
+
+<!-- HALAMAN 1: intro. Ganti teks judul di data-t (pakai | untuk ganti baris) dan kalimat di <p class="sub"> -->
+<div class="page active" id="p1">
+  <div class="big20"><img src="1.gif" alt="" class="gif"><span class="b20">20</span><div class="orbit"><b style="--i:0">💗</b><b style="--i:1">✨</b><b style="--i:2">🌸</b><b style="--i:3">💖</b><b style="--i:4">✨</b><b style="--i:5">🎀</b></div></div>
+  <h1 class="wave" data-t="Happy Birthday,|sayangkuu ˶ᵔ ᵕ ᵔ˶ ♡"></h1>
+  <p class="sub">kejutan pertamamu cuma sejauh satu klik ✨</p>
+  <button class="btn" onclick="go(2)">tap ‹𝟹</button>
+</div>
+
+<!-- HALAMAN 2: amplop -->
+<div class="page" id="p2">
+  <div class="gifwrap" id="env"><img src="write.gif" alt="amplop"></div>
+  <p>knock knock .. buka aku dong! ( ∩´͈ ᐜ `͈∩)</p>
+  <button class="btn" onclick="openEnv()">open it ‹𝟹</button>
+</div>
+
+<!-- HALAMAN 4 (nembak): ganti kalimat pertanyaan di <h1 id="q"> dan teks tombol. Teks tombol "Ga" yang berubah-ubah ada di noTxt (di script) -->
+<div class="page" id="p3">
+  <div id="ask" class="stack">
+    <div class="heartbig">💖</div>
+    <p class="sub" id="q0" style="margin:0 0 6px">sebelum lanjut, aku mau nanya sesuatu ...</p>
+    <h1 id="q">Mau jadi pacar aku ga? 🥺</h1>
+    <div class="row" id="row">
+      <button class="btn" id="yes" onclick="yes()">MAU 💗</button>
+      <button class="btn no" id="no" onclick="dodge()" onpointerenter="dodge()">Ga</button>
+    </div>
+  </div>
+  <div id="done" class="stack" style="display:none">
+    <h1>YEAAAY! 🥳</h1>
+    <div class="cert">
+      <div class="cert-top">💍 SERTIFIKAT JADIAN 💍</div>
+      <div class="cert-names"><span id="cHer"></span><i>&amp;</i><span id="cMe"></span></div>
+      <div class="cert-line">resmi berpacaran sejak</div>
+      <div class="cert-date" id="cDate"></div>
+      <div class="cert-line">status: <b>MILIK BERSAMA 💗</b></div>
+      <div class="stamp">SAH!</div>
+    </div>
+    <button class="btn" id="send" onclick="sendAnswer()">Kirim jawabanku 💌</button>
+    <p class="hint2">tap tombol di atas biar dia tau jawabanmu 🥹<br>(atau screenshot kartunya juga boleh)</p>
+  </div>
+</div>
+
+<!-- HALAMAN 3: surat ulang tahun. Isi suratnya ada di variabel letter (di script bawah), nama pengirim di FROM -->
+<div class="page" id="p4">
+  <div class="cake">🎂</div><h2>My Precious, soulatte 🎀</h2>
+  <div class="letter" id="letter"></div>
+  <button class="btn" id="nextBtn" style="display:none" onclick="go(3)">lanjut ‹𝟹</button>
+</div>
+
+<!-- LAGU: file Party.mp3 harus satu folder dengan file ini (ganti nama di src kalau mau lagu lain). Musik mulai saat amplop dibuka -->
+<button id="mute" onclick="toggleMute()" aria-label="musik">🔊</button>
+<audio id="bg-music" src="Party.mp3" loop></audio>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+const FROM = "ell"; // GANTI namamu di sini
+const HER = "miel"; // GANTI nama dia di sini (muncul di sertifikat)
+const WA_NUMBER = "6281223928596"; // isi nomor WA kamu: 628xxxxxxxxxx (tanpa + dan 0). Kalau kosong, dia bisa pilih sendiri kontaknya
+// GANTI isi surat di bawah ini (boleh ganti semua kata-katanya)
+document.querySelectorAll('.from').forEach(e=>e.textContent=FROM);
+document.querySelectorAll('.wave').forEach(h=>{let k=0;h.innerHTML=h.dataset.t.split('|').map(l=>[...l].map(c=>c===' '?' ':`<span style="animation-delay:${(k++)*.08}s">${c}</span>`).join('')).join('<br>')});
+document.querySelectorAll('.inside p').forEach((p,i)=>p.style.setProperty('--d',i));
+for(let i=0;i<22;i++){const s=document.createElement('div');s.className='tw';s.style.cssText=`left:${Math.random()*100}vw;top:${Math.random()*100}vh;animation-delay:${Math.random()*3}s;font-size:${8+Math.random()*12}px`;s.textContent='✦';document.body.appendChild(s)}
+let lastSp=0;addEventListener('pointermove',e=>{const t=Date.now();if(t-lastSp<60)return;lastSp=t;spark(e.clientX,e.clientY)});
+addEventListener('pointerdown',e=>burst(e.clientX,e.clientY,8));
+const letter = `happy 20th birthday to my sweetest soul! 💗
+
+kamu bikin setiap momen jadi lebih cerah hanya dengan menjadi dirimu. aku bersyukur banget atas cinta dan kebaikanmu.
+
+semoga di umur 20 ini harimu dipenuhi bahagia, tawa lembut, dan momen-momen manis yang bikin hatimu berdebar.
+
+you mean everything to me.
+
+adaa satu hal lagi yang pengen aku tanyain ... 🥺
+
+with all my love,
+𝜗𝜚 ${FROM} >⩊<`;
+
+let started=false, timer=null, cannon=null;
+function go(n){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('p'+n).classList.add('active');
+  if(n!==4)clearInterval(cannon);if(!started){started=true;setInterval(drop,350);setInterval(balloon,1800);}
+  if(n===4){
+    pop();
+    const el=document.getElementById('letter');el.style.minHeight='';el.textContent=letter;el.style.minHeight=el.offsetHeight+'px';el.textContent='';el.classList.add('typing');document.getElementById('nextBtn').style.display='none';cannons();clearInterval(cannon);cannon=setInterval(cannons,2800);
+    let i=0;clearInterval(timer);
+    timer=setInterval(()=>{ if(i<letter.length){el.textContent+=letter[i++];}else{clearInterval(timer);el.classList.remove('typing');document.getElementById('nextBtn').style.display='inline-block';}},30);
+  }
+}
+function openCard(){
+  const c=document.getElementById('card');
+  if(c.classList.contains('open'))return;
+  c.classList.add('open');pop();burst(innerWidth/2,innerHeight/2);
+  document.getElementById('hint').style.display='none';
+  setTimeout(()=>{document.getElementById('nextBtn').style.display='inline-block'},1500);
+}
+function openEnv(){const e=document.getElementById('env');if(e.classList.contains('opened'))return;e.classList.add('opened');document.getElementById('bg-music').play().catch(()=>{});document.getElementById('mute').style.display='block';burst(innerWidth/2,innerHeight/2,20);setTimeout(()=>go(4),1500);}
+function spark(x,y){const s=document.createElement('div');s.textContent=['✨','💗','🌸'][Math.random()*3|0];s.style.cssText=`position:fixed;left:${x}px;top:${y}px;font-size:14px;pointer-events:none;z-index:9998`;document.body.appendChild(s);s.animate([{transform:'translate(-50%,-50%) scale(1)',opacity:1},{transform:`translate(${(Math.random()-.5)*50}px,${30+Math.random()*30}px) scale(.3)`,opacity:0}],{duration:800}).onfinish=()=>s.remove()}
+function burst(x,y,n=16){for(let i=0;i<n;i++){const s=document.createElement('div');s.textContent=['💗','💖','✨','🌸'][i%4];s.style.cssText=`position:fixed;left:${x}px;top:${y}px;font-size:${16+Math.random()*14}px;pointer-events:none;z-index:9998`;document.body.appendChild(s);const a=Math.random()*6.28,d=70+Math.random()*120;s.animate([{transform:'translate(-50%,-50%) scale(.4)',opacity:1},{transform:`translate(calc(-50% + ${Math.cos(a)*d}px),calc(-50% + ${Math.sin(a)*d}px)) scale(1.2)`,opacity:0}],{duration:900+Math.random()*500,easing:'ease-out'}).onfinish=()=>s.remove()}}
+function balloon(){const b=document.createElement('div');b.className='balloon';const c=['#fbcfe8','#f9b4d0','#ffd6e5','#f4a3c4','#fecdd3'][Math.random()*5|0];b.style.cssText=`left:${Math.random()*95}vw;--c:${c};--dx:${(Math.random()-.5)*120}px;animation-duration:${7+Math.random()*5}s`;document.body.appendChild(b);setTimeout(()=>b.remove(),12500)}
+function cannons(){if(!window.confetti)return;let sh;try{sh=[confetti.shapeFromText({text:'💗',scalar:2}),'circle','square']}catch(e){}const o={particleCount:innerWidth<600?24:40,spread:70,startVelocity:55,colors:['#f9b4d0','#f4a3c4','#fbcfe8','#fff','#fde047'],...(sh?{shapes:sh,scalar:2}:{})};confetti({...o,angle:60,origin:{x:0,y:.8}});confetti({...o,angle:120,origin:{x:1,y:.8}})}
+let dodges=0;const noTxt=['Ga','Yakin? 🥺','Coba pikir lagi','Please 🥹','Jangan gitu dong','Klik yang pink aja 💗','Hehe ga bisa 😝'];
+function dodge(){const b=document.getElementById('no'),y=document.getElementById('yes');dodges++;b.textContent=noTxt[Math.min(dodges,noTxt.length-1)];b.style.position='fixed';b.style.left=Math.max(10,Math.random()*(innerWidth-b.offsetWidth-20))+'px';b.style.top=Math.max(10,Math.random()*(innerHeight-b.offsetHeight-20))+'px';b.style.zIndex=5;y.style.transform='scale('+Math.min(1+dodges*.12,2)+')';}
+function yes(){
+document.getElementById('ask').style.display='none';
+document.getElementById('cHer').textContent=HER;document.getElementById('cMe').textContent=FROM;
+document.getElementById('cDate').textContent=new Date().toLocaleDateString('id-ID',{day:'numeric',month:'long',year:'numeric'});
+document.getElementById('done').style.display='flex';
+cannons();burst(innerWidth/2,innerHeight/2,26);setTimeout(cannons,700);setTimeout(cannons,1800);
+}
+function sendAnswer(){
+const t=`Hai ${FROM} 💗\nAku udah buka kejutannya, dan jawabanku: MAU! 🥰\nSekarang kita resmi pacaran ya 💍\n- ${HER}`;
+const url='https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(t);
+const w=window.open(url,'_blank');if(!w)location.href=url;
+}
+function toggleMute(){const m=document.getElementById('bg-music');m.muted=!m.muted;document.getElementById('mute').textContent=m.muted?'🔇':'🔊'}
+function pop(){
+  if(window.confetti){
+    confetti({particleCount:innerWidth<600?100:160,spread:100,origin:{y:.6},colors:['#f9b4d0','#f4a3c4','#fbcfe8','#fff','#fde047']});
+  }
+}
+function drop(){
+  const el=document.createElement('div');
+  el.className='fall';
+  el.textContent=['💗','💖','🌸','✨','🎀'][Math.floor(Math.random()*5)];
+  el.style.left=Math.random()*100+'vw';
+  el.style.animationDuration=(4+Math.random()*3)+'s';
+  document.body.appendChild(el);
+  setTimeout(()=>el.remove(),7500);
+}
+</script>
+</body>
+</html>
