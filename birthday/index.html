@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Happy 20th Birthday 💗</title>
+<title>Happy 20th Birthday My LoVee 💗</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&family=Dancing+Script:wght@500;700&family=Indie+Flower&display=swap" rel="stylesheet">
 <style>
 :root{--bg1:#fff4f8;--bg2:#ffe1ec;--bg3:#fbcfe0;--ink:#a14d73;--accent:#f4a3c4;--deep:#cc5c87;--paper:#fffafc;--glass:rgba(255,255,255,.6);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -85,6 +85,7 @@ html{font-size:clamp(16px,calc(10px + 1.1vmin),26px)}
 .letter{max-width:35rem}
 .heartbig{font-size:min(5rem,10vh)}
 @media(max-height:520px){h1{font-size:1.35rem}.btn{margin-top:14px;padding:8px 22px;min-height:40px}.cert{padding:14px 14px 44px;margin:8px 0 0}.cert-names{font-size:1.5rem;margin:4px 0}#p4 h2{font-size:1.3rem}.letter{font-size:1rem;line-height:1.25;padding:10px 14px}.big20{margin-bottom:10px}.b20{font-size:1.2rem}.hint2{display:none}#p2 p{font-size:1.1rem}.gifwrap{margin-bottom:12px}}
+.cert{padding-bottom:24px}
 </style>
 </head>
 <body>
@@ -116,23 +117,21 @@ html{font-size:clamp(16px,calc(10px + 1.1vmin),26px)}
     </div>
   </div>
   <div id="done" class="stack" style="display:none">
-    <h1>YEAAAY! 🥳</h1>
+    <h1>Makasih ya, sayang 💗</h1>
     <div class="cert">
-      <div class="cert-top">💍 SERTIFIKAT JADIAN 💍</div>
+      <div class="cert-top">♡ UNTUK KITA ♡</div>
       <div class="cert-names"><span id="cHer"></span><i>&amp;</i><span id="cMe"></span></div>
-      <div class="cert-line">resmi berpacaran sejak</div>
+      <div class="cert-line">mulai hari ini, kita jalan bareng</div>
       <div class="cert-date" id="cDate"></div>
-      <div class="cert-line">status: <b>MILIK BERSAMA 💗</b></div>
-      <div class="stamp">SAH!</div>
     </div>
-    <button class="btn" id="send" onclick="sendAnswer()">Kirim jawabanku 💌</button>
-    <p class="hint2">tap tombol di atas biar dia tau jawabanmu 🥹<br>(atau screenshot kartunya juga boleh)</p>
+    <button class="btn" id="send" onclick="sendAnswer()">Kirim jawabanmu ke aku 💌</button>
+    <p class="hint2">tap tombol di atas biar aku tau jawabanmu ♡<br>(atau screenshot kartunya juga boleh)</p>
   </div>
 </div>
 
 <!-- HALAMAN 3: surat ulang tahun. Isi suratnya ada di variabel letter (di script bawah), nama pengirim di FROM -->
 <div class="page" id="p4">
-  <div class="cake">🎂</div><h2>My Precious, soulatte 🎀</h2>
+  <div class="cake">🎂</div><h2>My Lovee 🎀</h2>
   <div class="letter" id="letter"></div>
   <button class="btn" id="nextBtn" style="display:none" onclick="go(3)">lanjut ‹𝟹</button>
 </div>
@@ -143,9 +142,9 @@ html{font-size:clamp(16px,calc(10px + 1.1vmin),26px)}
 
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script>
-const FROM = "Malaikat"; // GANTI namamu di sini
-const HER = "soulatte"; // GANTI nama dia di sini (muncul di sertifikat)
-const WA_NUMBER = ""; // isi nomor WA kamu: 628xxxxxxxxxx (tanpa + dan 0). Kalau kosong, dia bisa pilih sendiri kontaknya
+const FROM = "ell imut"; // GANTI namamu di sini
+const HER = "renita sayang"; // GANTI nama dia di sini (muncul di sertifikat)
+const WA_NUMBER = "6281223928596"; // isi nomor WA kamu: 628xxxxxxxxxx (tanpa + dan 0). Kalau kosong, dia bisa pilih sendiri kontaknya
 // GANTI isi surat di bawah ini (boleh ganti semua kata-katanya)
 document.querySelectorAll('.from').forEach(e=>e.textContent=FROM);
 document.querySelectorAll('.wave').forEach(h=>{let k=0;h.innerHTML=h.dataset.t.split('|').map(l=>[...l].map(c=>c===' '?' ':`<span style="animation-delay:${(k++)*.08}s">${c}</span>`).join('')).join('<br>')});
@@ -153,18 +152,19 @@ document.querySelectorAll('.inside p').forEach((p,i)=>p.style.setProperty('--d',
 for(let i=0;i<22;i++){const s=document.createElement('div');s.className='tw';s.style.cssText=`left:${Math.random()*100}vw;top:${Math.random()*100}vh;animation-delay:${Math.random()*3}s;font-size:${8+Math.random()*12}px`;s.textContent='✦';document.body.appendChild(s)}
 let lastSp=0;addEventListener('pointermove',e=>{const t=Date.now();if(t-lastSp<60)return;lastSp=t;spark(e.clientX,e.clientY)});
 addEventListener('pointerdown',e=>burst(e.clientX,e.clientY,8));
-const letter = `happy 20th birthday to my sweetest soul! 💗
+const letter = `happy 20th birthday, my love! 💗
+another year of you, and i'm still so lucky to have you in my life.
 
-kamu bikin setiap momen jadi lebih cerah hanya dengan menjadi dirimu. aku bersyukur banget atas cinta dan kebaikanmu.
+aku ngga tahu akan ada sebanyak apa cerita yang menunggu kita ke depannya, tapi aku berharap kita masih bisa saling menggenggam dan melewati semuanya bersama.
 
-semoga di umur 20 ini harimu dipenuhi bahagia, tawa lembut, dan momen-momen manis yang bikin hatimu berdebar.
+please stay happy, stay healthy, and don't forget how special you are to me.
 
-you mean everything to me.
+i'm so glad it's you, Renita. always you. ♡
 
 adaa satu hal lagi yang pengen aku tanyain ... 🥺
 
 with all my love,
-𝜗𝜚 ${FROM} >⩊<`;
+𝜗𝜚 ${FROM} ell cakep >⩊<`;
 
 let started=false, timer=null, cannon=null;
 function go(n){
@@ -190,7 +190,7 @@ function spark(x,y){const s=document.createElement('div');s.textContent=['✨','
 function burst(x,y,n=16){for(let i=0;i<n;i++){const s=document.createElement('div');s.textContent=['💗','💖','✨','🌸'][i%4];s.style.cssText=`position:fixed;left:${x}px;top:${y}px;font-size:${16+Math.random()*14}px;pointer-events:none;z-index:9998`;document.body.appendChild(s);const a=Math.random()*6.28,d=70+Math.random()*120;s.animate([{transform:'translate(-50%,-50%) scale(.4)',opacity:1},{transform:`translate(calc(-50% + ${Math.cos(a)*d}px),calc(-50% + ${Math.sin(a)*d}px)) scale(1.2)`,opacity:0}],{duration:900+Math.random()*500,easing:'ease-out'}).onfinish=()=>s.remove()}}
 function balloon(){const b=document.createElement('div');b.className='balloon';const c=['#fbcfe8','#f9b4d0','#ffd6e5','#f4a3c4','#fecdd3'][Math.random()*5|0];b.style.cssText=`left:${Math.random()*95}vw;--c:${c};--dx:${(Math.random()-.5)*120}px;animation-duration:${7+Math.random()*5}s`;document.body.appendChild(b);setTimeout(()=>b.remove(),12500)}
 function cannons(){if(!window.confetti)return;let sh;try{sh=[confetti.shapeFromText({text:'💗',scalar:2}),'circle','square']}catch(e){}const o={particleCount:innerWidth<600?24:40,spread:70,startVelocity:55,colors:['#f9b4d0','#f4a3c4','#fbcfe8','#fff','#fde047'],...(sh?{shapes:sh,scalar:2}:{})};confetti({...o,angle:60,origin:{x:0,y:.8}});confetti({...o,angle:120,origin:{x:1,y:.8}})}
-let dodges=0;const noTxt=['Ga','Yakin? 🥺','Coba pikir lagi','Please 🥹','Jangan gitu dong','Klik yang pink aja 💗','Hehe ga bisa 😝'];
+let dodges=0;const noTxt=['Ga','Yakin? 🥺','Coba pikir lagi','Please 🥺','Jangan gitu dong','Klik yang pink aja 💗','Hehe ga bisa 😝'];
 function dodge(){const b=document.getElementById('no'),y=document.getElementById('yes');dodges++;b.textContent=noTxt[Math.min(dodges,noTxt.length-1)];b.style.position='fixed';b.style.left=Math.max(10,Math.random()*(innerWidth-b.offsetWidth-20))+'px';b.style.top=Math.max(10,Math.random()*(innerHeight-b.offsetHeight-20))+'px';b.style.zIndex=5;y.style.transform='scale('+Math.min(1+dodges*.12,2)+')';}
 function yes(){
 document.getElementById('ask').style.display='none';
@@ -200,7 +200,7 @@ document.getElementById('done').style.display='flex';
 cannons();burst(innerWidth/2,innerHeight/2,26);setTimeout(cannons,700);setTimeout(cannons,1800);
 }
 function sendAnswer(){
-const t=`Hai ${FROM} 💗\nAku udah buka kejutannya, dan jawabanku: MAU! 🥰\nSekarang kita resmi pacaran ya 💍\n- ${HER}`;
+const t=`Hai ${FROM}, makasih ya kejutannya 💗\nJawabanku: iya, aku mau.\nSemoga kita bisa jalan bareng terus ya.\n- ${HER}`;
 const url='https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(t);
 const w=window.open(url,'_blank');if(!w)location.href=url;
 }
